@@ -9,12 +9,12 @@
   left: auto;
   margin: auto;
 
-  svg {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    transform: rotateZ(210deg) scaleX(-1) !important;
-  }
+  // .animated-svg {
+  //   width: 100%;
+  //   height: auto;
+  //   bottom: 0;
+  //   transform: rotateZ(30deg);
+  // }
 
   .solid-logo {
     position: absolute;
@@ -25,7 +25,6 @@
     margin: auto;
     width: 100%;
     opacity: 0;
-    transform: rotateZ(30deg) !important;
     z-index: 1;
   }
 }
@@ -33,4 +32,14 @@
 .svg-container {
   stroke: #ffd700;
   stroke-width: 10px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
